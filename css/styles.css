@@ -1,0 +1,47 @@
+body{
+    background-color: lightgray;
+}
+
+:any-link{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+header{
+    border-bottom: 2px solid;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+ul, li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    margin-right: 1em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid;
+    background-color: lightpink;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid;
+}
