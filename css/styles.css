@@ -53,23 +53,35 @@ footer{
     text-align: center;
 }
 
-#container-gallery{
+#containergallery{
     background-color: lightgray;
-    margin: 15px auto 15px auto;
+    margin: 20px auto 50px auto;
     padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: column;
+    border-radius: 20px;
 }
 
-#gallery img{
-    height: 40px;
-    width: 45px;
-    margin: 10px 1px;
-    cursor: pointer;
-    opacity: 0.5;
-    border-radius: 45%;
+#containergallery > #gallery{
+    margin: 10px auto 10px auto; 
+    padding: 20px; 
+    width: 400px; 
+    height: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    overflow: hidden;
 }
+
+#gallery > div{
+    cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+}
+
+/*
 
 #gallery{
     margin: 15px auto 15px auto;
@@ -96,6 +108,8 @@ footer{
     max-height: 100%;
     
 }
+*/
+
 
 /*Main Page*/
 
