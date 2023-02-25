@@ -1,19 +1,113 @@
 
-var firstIndex = 0;
-function automaticSlide(){
-    setTimeout(automaticSlide, 3000)
-    var pics;
-    const img = document.querySelectorAll('img');
-    for(pics = 0; pics < img.length; ++pics){
-        img[pics].style.display ="none";
+/*
+//Form//
+
+let subscribers = [
+    {
+        "name": "Adaline",
+        "lastName": "Acosta",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
+    }
+    
+    {
+        "name": "Pepe",
+        "lastName": "Acosta",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
     }
 
-    firstIndex++;
-    if(firstIndex >= img.length){
-        firstIndex = 1;
+    {
+        "name": "Ana",
+        "lastName": "Rodriguez",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
     }
 
-    img[firstIndex -1].style.display ="block";
+    {
+        "name": "Juan",
+        "lastName": "Acosta",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
+    }
+
+    {
+        "name": "Adaline",
+        "lastName": "Rodriguez",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
+    }
+
+    {
+        "name": "Carlos",
+        "lastName": "Acosta",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
+    }
+
+    {
+        "name": "Adaline",
+        "lastName": "Rodriguez",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
+    }
+
+    {
+        "name": "Jaime",
+        "lastName": "Acosta",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
+    }
+
+    {
+        "name": "Adaline",
+        "lastName": "Acosta",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
+    }
+
+    {
+        "name": "Eva",
+        "lastName": "Acosta",
+        "date": "02/13/1989",
+        "phone": "520-566-4502",
+        "school name": "Camelback"
+    }  
+];
+
+JSON.stringify(subscribers);
+
+console.log(subscribers);
+*/
+
+
+// Read More (hidden) - Main Page //
+
+const article = document.querySelector("#paragraph");
+const button = document.querySelector("#paragraphButton");
+
+button.addEventListener("click", readMore);
+
+function readMore() {
+    if (article.className == "open") {
+      // Read less
+    article.className = "";
+    button.innerHTML = "Show more";
+  } else {
+    article.className = "open";
+    button.innerHTML = "Show less";
+  }
 }
 
-automaticSlide();
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}

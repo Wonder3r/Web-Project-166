@@ -1,0 +1,82 @@
+* {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(38,82,95);
+}
+
+:any-link{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+header{
+    border-bottom: 1px solid;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+ul, li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    margin-right: 1em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    background-color: rgb(230,220,203);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*About Page*/
+
+#about-us{
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    max-width: 900px;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#scrollup {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+#scrollup:hover{
+    cursor: pointer;
+    background: rgb(38,82,95);
+}
+
+img{
+    border-radius: 25px;
+    max-width: 100%;
+
+}

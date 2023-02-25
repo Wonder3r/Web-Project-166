@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="../Web-Project 166/js/index.js"></script>
     <title>Main Page</title>
 </head>
 <body>
@@ -15,22 +14,56 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index2.html">Gallery</a> </li>
                 <li><a href="index3.html">About Page</a></li>
+                <li><a href="index4.html">Log In</a></li>
             </ul>
         </nav>
     </header>
     <main id="main-page">
-        <h1> MAIN CONTENT </h1>
-        <br> <br> <br> <br><br><br><br> <br><br><br>
-        <p> CONTENT
-        </p>
-        <br><br><br> <br><br><br><br> <br><br><br>
+        <div id="topmainpage">
+            <h1>Come Join the Fun!</h1>
+            <div>
+                <img id="golden" src="/img/Mainpage.jpg" alt="Golden Dog">
+            </div>
+            <p>Activities:
+            </p>
+            <ul>
+                <li>Swimming</li>
+                <li>Walking</li>
+                <li>Puzzles</li>
+                <li>Fetch</li>
+            </ul>
+        </div>
+        <article id="paragraph">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus orci. Nisi lacus sed viverra tellus in hac habitasse platea. Auctor eu augue ut lectus arcu bibendum. Vestibulum sed arcu non odio euismod lacinia at quis risus. Turpis egestas sed tempus urna et pharetra. Sed egestas egestas fringilla phasellus faucibus. Proin fermentum leo vel orci. Sed velit dignissim sodales ut eu. Molestie nunc non blandit massa enim nec dui nunc mattis. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Dolor sit amet consectetur adipiscing elit ut aliquam. Ac ut consequat semper viverra nam libero justo laoreet sit. Morbi tincidunt augue interdum velit. Nam at lectus urna duis convallis. Velit euismod in pellentesque massa placerat duis. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Nulla at volutpat diam ut venenatis tellus in. Orci phasellus egestas tellus rutrum tellus. <br> <br>
+            Enim sed faucibus turpis in eu mi bibendum neque egestas. Amet mauris commodo quis imperdiet massa. Vel quam elementum pulvinar etiam non quam. In hac habitasse platea dictumst. Odio facilisis mauris sit amet massa. Sit amet est placerat in. Elementum integer enim neque volutpat ac. Dignissim convallis aenean et tortor at risus viverra adipiscing. Velit scelerisque in dictum non consectetur a erat nam at. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Tellus integer feugiat scelerisque varius. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Platea dictumst quisque sagittis purus sit amet volutpat. Nullam ac tortor vitae purus faucibus. Ullamcorper eget nulla facilisi etiam dignissim. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus orci. Nisi lacus sed viverra tellus in hac habitasse platea. Auctor eu augue ut lectus arcu bibendum. Vestibulum sed arcu non odio euismod lacinia at quis risus. Turpis egestas sed tempus urna et pharetra. Sed egestas egestas fringilla phasellus faucibus. Proin fermentum leo vel orci. Sed velit dignissim sodales ut eu. Molestie nunc non blandit massa enim nec dui nunc mattis. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Dolor sit amet consectetur adipiscing elit ut aliquam. Ac ut consequat semper viverra nam libero justo laoreet sit. Morbi tincidunt augue interdum velit. Nam at lectus urna duis convallis. Velit euismod in pellentesque massa placerat duis. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Nulla at volutpat diam ut venenatis tellus in. Orci phasellus egestas tellus rutrum tellus. <br> <br>
+                Enim sed faucibus turpis in eu mi bibendum neque egestas. Amet mauris commodo quis imperdiet massa. Vel quam elementum pulvinar etiam non quam. In hac habitasse platea dictumst. Odio facilisis mauris sit amet massa. Sit amet est placerat in. Elementum integer enim neque volutpat ac. Dignissim convallis aenean et tortor at risus viverra adipiscing. Velit scelerisque in dictum non consectetur a erat nam at. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Tellus integer feugiat scelerisque varius. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Platea dictumst quisque sagittis purus sit amet volutpat. Nullam ac tortor vitae purus faucibus. Ullamcorper eget nulla facilisi etiam dignissim. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu.</p>
+        </article>
+        <button  type="button" id="scrollup" onclick="scrollToTop()">Back Up</button>
+        <button type="button" id="paragraphButton" onclick="myFunction">Show More</button>
+        <div id="bottommainpage">
+            <p id="contact">Contact Us</p>
+            <form action="rodriguezcode01@gmail.com" method="POST" id="dataform">
+                <label for="fname">First Name:</label> <br><br>
+                <input type="text" id="fname" name="fname" required> <br><br>
+                <label for="lname">Last Name:</label> <br><br>
+                <input type="text" id="lname" name="lname" required> <br><br>
+                <label for="date">Date:</label><br><br>
+                <input type="date" name="date" id="date"> <br><br>
+                <label for="number">Phone Number:</label> <br><br>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}/[0-9]{3}/[0-9]{4}" size="12" minlength="10" maxlength="12" required> <br><br>
+                <label for="school">School Name:</label> <br><br>
+                <input type="text" id="school" name="school"> <br><br>
+                <button type="submit">Submit</button> <br> <br>
+            </form>
+        </div>
     </main>
     <footer>
         <div>
-            <h1>CONTACT INFO</h1>
+            <h2>CONTACT INFO</h2>
             <h3>EMAIL</h3>
-            <h3>PHONE # </h3>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
