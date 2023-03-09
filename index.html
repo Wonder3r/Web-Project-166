@@ -40,23 +40,23 @@
                 Enim sed faucibus turpis in eu mi bibendum neque egestas. Amet mauris commodo quis imperdiet massa. Vel quam elementum pulvinar etiam non quam. In hac habitasse platea dictumst. Odio facilisis mauris sit amet massa. Sit amet est placerat in. Elementum integer enim neque volutpat ac. Dignissim convallis aenean et tortor at risus viverra adipiscing. Velit scelerisque in dictum non consectetur a erat nam at. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Tellus integer feugiat scelerisque varius. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Platea dictumst quisque sagittis purus sit amet volutpat. Nullam ac tortor vitae purus faucibus. Ullamcorper eget nulla facilisi etiam dignissim. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu.</p>
         </article>
         <button  type="button" id="scrollup" onclick="scrollToTop()">Back Up</button>
-        <button type="button" id="paragraphButton" onclick="myFunction">Show More</button>
-        <div id="bottommainpage">
+        <button type="button" id="paragraphButton" onclick="myFunction">Show More</button> <br>
+        <article id="bottommainpage">
             <p id="contact">Contact Us</p>
-            <form action="rodriguezcode01@gmail.com" method="POST" id="dataform">
-                <label for="fname">First Name:</label> <br><br>
-                <input type="text" id="fname" name="fname" required> <br><br>
-                <label for="lname">Last Name:</label> <br><br>
-                <input type="text" id="lname" name="lname" required> <br><br>
-                <label for="date">Date:</label><br><br>
-                <input type="date" name="date" id="date"> <br><br>
-                <label for="number">Phone Number:</label> <br><br>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}/[0-9]{3}/[0-9]{4}" size="12" minlength="10" maxlength="12" required> <br><br>
-                <label for="school">School Name:</label> <br><br>
-                <input type="text" id="school" name="school"> <br><br>
-                <button type="submit">Submit</button> <br> <br>
+            <form action="https://sheetdb.io/api/v1/w6birtt9y44g5" method="POST" id="contactForm">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="data[fname]" required>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="data[lname]" required>
+                <label for="date">Date:</label>
+                <input type="date" name="data[date]" id="date">
+                <label for="number">Phone Number:</label>
+                <input type="tel" name="data[phone]" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" size="12" minlength="10" maxlength="12" required>
+                <label for="school">School Name:</label>
+                <input type="text" id="school" name="data[school]"> <br>
+                <button type="submit" id="contact-button" onclick="submit();">Submit</button>
             </form>
-        </div>
+        </article>
     </main>
     <footer>
         <div>

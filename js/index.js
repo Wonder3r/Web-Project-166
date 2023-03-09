@@ -1,95 +1,3 @@
-
-/*
-//Form//
-
-let subscribers = [
-    {
-        "name": "Adaline",
-        "lastName": "Acosta",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-    
-    {
-        "name": "Pepe",
-        "lastName": "Acosta",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-
-    {
-        "name": "Ana",
-        "lastName": "Rodriguez",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-
-    {
-        "name": "Juan",
-        "lastName": "Acosta",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-
-    {
-        "name": "Adaline",
-        "lastName": "Rodriguez",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-
-    {
-        "name": "Carlos",
-        "lastName": "Acosta",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-
-    {
-        "name": "Adaline",
-        "lastName": "Rodriguez",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-
-    {
-        "name": "Jaime",
-        "lastName": "Acosta",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-
-    {
-        "name": "Adaline",
-        "lastName": "Acosta",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }
-
-    {
-        "name": "Eva",
-        "lastName": "Acosta",
-        "date": "02/13/1989",
-        "phone": "520-566-4502",
-        "school name": "Camelback"
-    }  
-];
-
-JSON.stringify(subscribers);
-
-console.log(subscribers);
-*/
-
-
 // Read More (hidden) - Main Page //
 
 const article = document.querySelector("#paragraph");
@@ -111,3 +19,32 @@ function readMore() {
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
+
+
+// Form //
+
+/*
+var Form = document.getElementById("contactForm");
+Form.addEventListener("resubmit", e => {
+  e.preventDefault();
+  fetch(Form.action,{
+    method: "POST",
+    body: new FormData(document.getElementById("contactForm")),
+  }).then(
+    Response => Response.json()
+  ).then(html) => {
+    window.alert("d.html", "_blank");
+  }
+}) */
+
+
+/*
+const form = document.getElementById('contactForm');
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  alert("Jello")
+})
+
+*/

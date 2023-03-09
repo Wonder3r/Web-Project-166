@@ -1,7 +1,7 @@
 
 var firstIndex = 0;
 function automaticSlide(){
-    setTimeout(automaticSlide, 3000)
+    setTimeout(automaticSlide, 2800)
     var pics;
     const img = document.querySelectorAll('img');
     for(pics = 0; pics < img.length; ++pics){

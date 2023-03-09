@@ -2,17 +2,13 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(38,82,95);
+    background-color: #2A4646;
 }
 
 :any-link{
     text-decoration: none;
     cursor: pointer;
-    color: white;
-}
-
-header{
-    border-bottom: 1px solid;
+    color: #e0fbfc;
 }
 
 nav{
@@ -36,7 +32,8 @@ main{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid;
-    background-color: rgb(230,220,203);
+    background-color: #d2c1ab;
+    border-radius: 22px;
 }
 
 footer{
@@ -44,6 +41,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #e0fbfc;
 }
 
 /*About Page*/
@@ -67,12 +65,12 @@ article{
     border-radius: 25px;
     padding: 15px;
     background-color: black;
-    color: white;
+    color: #e0fbfc;
 }
 
 #scrollup:hover{
     cursor: pointer;
-    background: rgb(38,82,95);
+    background: #844933;
 }
 
 img{
